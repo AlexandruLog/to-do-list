@@ -20,7 +20,7 @@ body {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* animation: dropContainer 1.6s; */
+  animation: dropContainer 1.6s;
 }
 
 @keyframes dropContainer {
