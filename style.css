@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #9957f2;
+}
+
+.icon {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Container styles */
+
+.container {
+  width: 285px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* animation: dropContainer 1.6s; */
+}
+
+@keyframes dropContainer {
+  from {
+    transform: translate(-50%, -1000px);
+  }
+}
+
+/* Create events div styles */
+
+.create-events {
+  background-color: #fff;
+  width: 285px;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 1px 1px 12px #7f44ba;
+}
+
+#inputEvent {
+  padding: 3px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+
+.btn {
+  background-color: #8052ec;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: red;
+}
+
+.btn:hover {
+  background-color: #7746ea;
+  color: #fff;
+}
+
+/* Existing Events Div */
+
+.events {
+  position: absolute;
+  width: 100%;
+  margin-top: -50px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.drop-events {
+  margin-top: 20px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.list-group {
+  border-radius: 6px;
+  transition: 0.6s;
+}
+
+.list-group li {
+  padding: 14px 40px;
+  transition: 0.6s;
+}
+
+.delete-li {
+  margin-left: 160px;
+  opacity: 0;
+}
+
+/* Done item option img */
+
+.done-item {
+  width: 14.6px;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  margin-right: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.22s;
+}
+
+.fill-circle {
+  background-color: #000;
+}
+
+/* Remove thrash item img */
+
+.remove-item {
+  position: absolute;
+  right: 12px;
+  width: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.remove-item:hover {
+  animation: shakeTrash 0.6s 0.1s;
+}
+
+@keyframes shakeTrash {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-12deg);
+  }
+
+  60% {
+    transform: rotate(9deg);
+  }
+}
