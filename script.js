@@ -21,6 +21,9 @@ function addEvent() {
     newItem.textContent =
       inputEvent.value.charAt(0).toUpperCase() + inputEvent.value.slice(1); //Capitalized
     listGroupEvents.appendChild(newItem);
+    newItem.addEventListener("click", () => {
+      newItem.classList.add("line-throught");
+    });
     inputEvent.value = null;
 
     //Create Done Option
