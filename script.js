@@ -22,7 +22,7 @@ function addEvent() {
       inputEvent.value.charAt(0).toUpperCase() + inputEvent.value.slice(1); //Capitalized
     listGroupEvents.appendChild(newItem);
     newItem.addEventListener("click", () => {
-      newItem.classList.toggle("line-throught");
+      newItem.classList.toggle("line-through");
     });
     inputEvent.value = null;
 
